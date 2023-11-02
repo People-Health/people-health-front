@@ -1,0 +1,35 @@
+.container {
+}
+
+.logo {
+   padding: 1.18rem 0 1.18rem 10rem;
+   background-color: #fff;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 1rem 10rem;
+   background-color: #1F2B6C;
+    
+}
+
+.menu {
+   display:flex;
+   gap: 1.25rem
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: #fff;
+   color: #1F2B6C;
+
+   border-radius: 3.125rem;
+   padding: 0.5rem  2rem;
+   gap: 2rem;
+}
