@@ -4,6 +4,8 @@ import Head from 'next/head'
 import logo from "../../public/logo.png"
 import doctor from "../../public/doctor2.jpg"
 import varios_medicos from "../../public/varios_medicos.png"
+import exame2 from "../../public/exame2.jpg"
+import femaleDoctors from "../../public/femaleDoctors.jpg"
 
 export default function Home() {
   return (
@@ -66,6 +68,20 @@ export default function Home() {
       </div>
 
       <div className={style.fim}></div>
+
+      
+
+      <div className={style.areaServicos}>
+        <h1 className={style.TXTservicos}>Esse texto</h1>
+
+        <div className={style.exame}>
+        <Image src={exame2} alt="exame"/>
+        </div>
+
+        <div className={style.femaleDoctors}>
+        <Image src={femaleDoctors} alt="doutoras"/>
+        </div>
+      </div>
 
     </main>
   
