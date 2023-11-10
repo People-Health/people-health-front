@@ -1,11 +1,17 @@
 import Image from 'next/image'
 import style from "../styles/home.module.css"
 import Head from 'next/head'
-import logo from "../../public/logo.png"
-import doctor from "../../public/doctor2.jpg"
+import logo from "../../public/logo.png";
+
+import doctor2 from "../../public/doctor2.jpg";
+
+import doctor from "../../public/doctor.png";
 import varios_medicos from "../../public/varios_medicos.png"
 import exame2 from "../../public/exame2.jpg"
-import femaleDoctors from "../../public/femaleDoctors.jpg"
+import femaleDoctors from "../../public/femaleDoctors.jpg";
+import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
+
+
 
 export default function Home() {
   return (
