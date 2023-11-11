@@ -2,9 +2,9 @@ import Image from 'next/image'
 import style from "../styles/home.module.css"
 import Head from 'next/head'
 import logo from "../../public/logo.png";
-
+import logoWhats from "../../public/logoWhats.png";
+import logoRed from "../../public/favicon.ico";
 import doctor2 from "../../public/doctor2.jpg";
-
 import doctor from "../../public/doctor.png";
 import varios_medicos from "../../public/varios_medicos.png"
 import exame2 from "../../public/exame2.jpg"
@@ -17,23 +17,25 @@ export default function Home() {
   return (
     <main className={style.container}>
 
-      <Head>
+      {/* <Head>
         <title>Home | People Health</title>
-      </Head>
+      </Head> */}
 
-      <div className={style.logo}>
+      {/* <div className={style.logo}>
         <Image src={logo} alt="logo" />
-      </div>
+      </div> */}
 
       <header className={style.header}>
+      
         <div className={style.menu}>
+        <Image  width={40} src={logoRed}/>
           <button>Início</button>
           <button>Sobre Nós</button>
           <button>Serviços</button>
           <button>Contato</button>
         </div>
         <div className={style.buttons}>
-            <button className={style.buttonSignup}>Cadastre-se</button>
+            {/* <button className={style.buttonSignup}>Cadastre-se</button> */}
             <button className={style.buttonSignin}>Login</button>
         </div>
       </header>

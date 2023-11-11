@@ -20,11 +20,14 @@
    display: flex;
    gap: 1rem;
    color: #BFD2F8;
+   
 }
 
-.buttons {
-   display: flex;
+.menu button {
    gap: 2rem;
+   margin-right:10px;
+   margin-left:10px;
+   
 }
 
 .buttonSignup {
