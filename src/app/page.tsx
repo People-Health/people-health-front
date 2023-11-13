@@ -28,7 +28,7 @@ export default function Home() {
       <header className={style.header}>
       
         <div className={style.menu}>
-        <Image  width={40} src={logoRed}/>
+        <Image  width={40} src={logoRed} alt='logo'/>
           <button>Início</button>
           <button>Sobre Nós</button>
           <button>Serviços</button>
@@ -95,3 +95,4 @@ export default function Home() {
   
   )
 } 
+//Comentario
