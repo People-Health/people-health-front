@@ -12,6 +12,7 @@ import femaleDoctors from "../../public/femaleDoctors.jpg";
 import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
 
 
+//teste
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
       </div> */}
 
       <header className={style.header}>
-      
+
         <div className={style.menu}>
-        <Image  width={40} src={logoRed}/>
+        <Image  width={40} src={logoRed} alt='logo'/>     
           <button>Início</button>
           <button>Sobre Nós</button>
           <button>Serviços</button>
@@ -95,3 +96,4 @@ export default function Home() {
   
   )
 } 
+//
