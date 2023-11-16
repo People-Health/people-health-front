@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from "../styles/home.module.css"
+
 import Head from 'next/head'
 import logo from "../../public/logo.png";
 import logoWhats from "../../public/logoWhats.png";
@@ -10,6 +11,8 @@ import varios_medicos from "../../public/varios_medicos.png"
 import exame2 from "../../public/exame2.jpg"
 import femaleDoctors from "../../public/femaleDoctors.jpg";
 import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
+
+import Link from 'next/link';
 
 
 
@@ -30,13 +33,13 @@ export default function Home() {
         <div className={style.menu}>
         <Image  width={40} src={logoRed} alt='logo'/>
           <button>Início</button>
+          <Link href="/map"></Link>
           <button>Sobre Nós</button>
           <button>Serviços</button>
           <button>Contato</button>
         </div>
-        <div className={style.buttons}>
-            {/* <button className={style.buttonSignup}>Cadastre-se</button> */}
-            <button className={style.buttonSignin}>Login</button>
+        <div> {/*className={style.buttons}*/}
+            <button className={style.buttonSignin}><Link href="/login">Login</Link></button>
         </div>
       </header>
 
