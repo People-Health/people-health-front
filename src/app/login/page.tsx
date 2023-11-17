@@ -1,9 +1,16 @@
+import Footer from '../footer/footer';
+import style from  './login.module.css';
 export default function Login(){
 
 
     return (
-        <h1>Login Page</h1>
-
+        <main className={style.mainContainer}>
+            <h1>Login Page</h1>
+            <Footer/>
+        </main>
+         
 
     );
+
+
 }

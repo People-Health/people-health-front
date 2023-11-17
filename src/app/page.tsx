@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import style from "../styles/home.module.css"
-
 import Head from 'next/head'
 import logo from "../../public/logo.png";
 import logoWhats from "../../public/logoWhats.png";
@@ -13,11 +12,12 @@ import femaleDoctors from "../../public/femaleDoctors.jpg";
 import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
 
 import Link from 'next/link';
-
+import Footer from './footer/footer';
 
 
 export default function Home() {
   return (
+    <>
     <main className={style.container}>
 
       {/* <Head>
@@ -33,7 +33,7 @@ export default function Home() {
         <div className={style.menu}>
         <Image  width={40} src={logoRed} alt='logo'/>
           <button>Início</button>
-          <Link href="/map"></Link>
+          <Link href="/map">Map</Link>
           <button>Sobre Nós</button>
           <button>Serviços</button>
           <button>Contato</button>
@@ -95,7 +95,9 @@ export default function Home() {
       </div>
 
     </main>
-  
+    <Footer/>
+
+    </>
   )
 } 
 //Comentario
