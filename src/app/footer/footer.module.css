@@ -1,0 +1,41 @@
+
+.footer{
+    width:auto;
+    height:auto;
+    background-color: #1F2B6C;
+    color:#FFFFFF;
+    padding:30px;
+    
+}
+
+.footerContainer{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+    font-size:15px;
+
+}
+
+.footerFirstContent h2{
+    font-size: 35px;
+    color:#BFD2F8;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+.footerSecondContent h3{
+    font-size:20px;
+    color:#BFD2F8;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+.footerEnd{
+    display: flex;
+    color:#BFD2F8;
+    padding-top:20px;
+    font-size:12px;
+    justify-content: center;
+    font-weight:bold;
+
+}
+
+
