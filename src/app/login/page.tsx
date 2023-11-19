@@ -20,6 +20,7 @@ const  Login=()=>{
 
 const  LoginForm=()=>{
     return(
+   
         <form style={{display:'flex',flexDirection:'column',width:'300px'}}>
             <label style={{display:'flex', justifyContent:'space-between'}}>
                 Usuário:
@@ -34,6 +35,7 @@ const  LoginForm=()=>{
             </div>
             
         </form>
+       
     )
 }
 

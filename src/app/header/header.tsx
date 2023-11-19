@@ -15,13 +15,13 @@ type HeaderProps = {
             <header className={style.header}>
 
                 <div className={style.menuBtnsContainer}>
-                    <Image width={40} src={logoRed} className={style.button} alt="logo"/>
+                    <Image width={40} src={logoRed} style={{paddingRight:'10px'}} alt="logo"/>
                     <button  className={style.button}><Link href="/">Início</Link></button>
                     <button className={style.button}>Sobre nós</button>
                     <button className={style.button} >Serviços</button>
                     <button className={style.button}>Contato</button>
                 </div>
-                <button className={style.logInOutBtn}><Link href="/loginn">Login</Link></button>
+                <button className={style.logInOutBtn}><Link href="/login">Login</Link></button>
             
             </header>
           );
@@ -31,7 +31,7 @@ type HeaderProps = {
         return (
             <header className={style.header}>
                 <div className={style.menuBtnsContainer}>
-                    <Image width={40} src={logoRed}  alt="logo"/>
+                    <Image width={40} src={logoRed} style={{paddingRight:'10px'}}  alt="logo"/>
                     <button className={style.button}><Link href="">Início</Link></button>
                     <button className={style.button}>Consultar paciente</button>
                     <button className={style.button}>Cadastrar paciente</button>
@@ -47,7 +47,7 @@ type HeaderProps = {
         return(
             <header className={style.header}>
             <div className={style.menuBtnsContainer}>
-                <Image width={40} src={logoRed}  alt="logo"/>
+                <Image width={40} src={logoRed}  style={{paddingRight:'10px'}} alt="logo"/>
                 <button className={style.button}><Link href="">Início</Link></button>
                 <button className={style.button}>Exames</button>
                 <button className={style.button}>Dados médicos</button>
