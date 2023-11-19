@@ -1,4 +1,32 @@
+.container{
+    display:'flex';
+    height: 100vh;
+    flex-direction: column;
+    background-color:#BFD2F8;
+}
 
-.mainContainer{
+.formContainer{
    
+    display: 'flex';
+    flex: 1; 
+    justify-content: 'center';
+    align-items: 'center' 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 50%;
+    align-items: center;
+    background-color: rgb(189, 25, 25);
+
+    
+}
+
+.footerContainer{
+    background-color: 'black';
+    color: 'white';
+    text-align: 'center';
+    padding: '10px'
 }
