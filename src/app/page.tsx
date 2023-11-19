@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import style from "../styles/home.module.css"
-import Head from 'next/head'
 import logo from "../../public/logo.png";
 import logoWhats from "../../public/logoWhats.png";
 import logoRed from "../../public/favicon.ico";
@@ -13,35 +12,14 @@ import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
 
 import Link from 'next/link';
 import Footer from './footer/footer';
+import Header from './header/header';
 
 
 export default function Home() {
   return (
     <>
     <main className={style.container}>
-
-      {/* <Head>
-        <title>Home | People Health</title>
-      </Head> */}
-
-      {/* <div className={style.logo}>
-        <Image src={logo} alt="logo" />
-      </div> */}
-
-      <header className={style.header}>
-      
-        <div className={style.menu}>
-        <Image  width={40} src={logoRed} alt='logo'/>
-          <button>Início</button>
-          <Link href="/map">Map</Link>
-          <button>Sobre Nós</button>
-          <button>Serviços</button>
-          <button>Contato</button>
-        </div>
-        <div> {/*className={style.buttons}*/}
-            <button className={style.buttonSignin}><Link href="/login">Login</Link></button>
-        </div>
-      </header>
+      <Header option={0}/>
 
       <div className={style.doctor}>
         <Image src={doctor} alt="doctor"/>  

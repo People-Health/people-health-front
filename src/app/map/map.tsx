@@ -12,7 +12,7 @@ export default function Map(){
 
         //process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
         const loader= new Loader({
-            apiKey:process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+            apiKey: 'AIzaSyCTyXYo2p8_QWgEWnQhNvs0oq_RyOIsA7Q',
             version: 'weekly'
         });
 
