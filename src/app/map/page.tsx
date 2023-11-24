@@ -27,9 +27,10 @@ const Map = () => {
  return (
     <div>
         <Header option={1}/>
-        <Footer/>
+        
       <h1>Welcome to Next.js!</h1>
       <MapWithMarker />
+      <Footer/>
     </div>
  );
 };
