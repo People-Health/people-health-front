@@ -75,28 +75,72 @@ export default function Map() {
 
 //codigo abaixo é o adicionado mais recente ao projeto
 
-const PositionTracker: React.FC = () => {
-  const [position, setPosition] = useState<LatLngExpression>([0, 0]);
+// const PositionTracker: React.FC = () => {
+//   const [position, setPosition] = useState<LatLngExpression>([0, 0]);
 
-  const handleClick = (e: { latlng: LatLngExpression }) => {
-    setPosition(e.latlng);
+//   const handleClick = (e: { latlng: LatLngExpression }) => {
+//     setPosition(e.latlng);
+//   };
+
+//   return (
+//     <MapContainer center={position} zoom={13} style={{ height: '100vh', width: '100%' }} onClick={handleClick}>
+//       <TileLayer
+//         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+//       />
+//       <Marker position={position}>
+//         <Popup>
+//           Latitude: {position[0]} <br />
+//           Longitude: {position[1]}
+//         </Popup>
+//       </Marker>
+//     </MapContainer>
+//   );
+// };
+
+
+import { InfoWindow } from "@react-google-maps/api";
+
+const PositionTracker: React.FC = () => {
+  const [position, setPosition] = useState({ lat: 0, lng: 0 });
+  const [map, setMap] = useState<google.maps.Map | null>(null);
+
+  const onLoad = (map: google.maps.Map) => {
+    setMap(map);
   };
 
+  const onMapClick = (e: google.maps.MapMouseEvent) => {
+    const newPosition = { lat: e.latLng.lat(), lng: e.latLng.lng() };
+    setPosition(newPosition);
+  };
+
+  useEffect(() => {
+    // Use map to perform any additional operations when the map changes
+    if (map) {
+      // You can perform additional operations with the Google Maps API here
+    }
+  }, [map]);
+
   return (
-    <MapContainer center={position} zoom={13} style={{ height: '100vh', width: '100%' }} onClick={handleClick}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={position}>
-        <Popup>
-          Latitude: {position[0]} <br />
-          Longitude: {position[1]}
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <LoadScript googleMapsApiKey="AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY">
+      <GoogleMap
+        center={position}
+        zoom={13}
+        onLoad={onLoad}
+        onClick={onMapClick}
+      >
+        <Marker position={position} />
+        <InfoWindow position={position}>
+          <div>
+            Latitude: {position.lat} <br />
+            Longitude: {position.lng}
+          </div>
+        </InfoWindow>
+      </GoogleMap>
+    </LoadScript>
   );
 };
+
 
 export {Map}
 export {PositionTracker}
