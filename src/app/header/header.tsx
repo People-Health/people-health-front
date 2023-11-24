@@ -38,7 +38,7 @@ type HeaderProps = {
                     <button className={style.button}>Atualizar dados paciente</button>
                     <button className={style.button}>Mapa</button>
                 </div>
-                <button className={style.logInOutBtn}><Link href="/">logout</Link></button>
+                <button className={style.logInOutBtn}><Link href="/">Logout</Link></button>
             </header>
           );
     }
@@ -52,7 +52,7 @@ type HeaderProps = {
                 <button className={style.button}>Exames</button>
                 <button className={style.button}>Dados médicos</button>
             </div>
-            <button className={style.logInOutBtn}><Link href="/">logout</Link></button>
+            <button className={style.logInOutBtn}><Link href="/">Logout</Link></button>
         </header>
         );
 
