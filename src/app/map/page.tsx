@@ -19,19 +19,60 @@
 //     )
 // }
 
-import MapWithMarker from '../map/map';
-import Footer from '../footer/footer';
-import Header from '../header/header';
+// import MapWithMarker from '../map/map';
+// import Footer from '../footer/footer';
+// import Header from '../header/header';
+// import MyMap from "./map"
 
-const Map = () => {
- return (
+// const Mapa = () => {
+//  return (
+//     <div>
+//         <Header option={1}/>
+//       <h1>Welcome to Next.js!</h1>
+      
+//       <MapWithMarker />
+//       <Footer/>
+//     </div>
+//  );
+// };
+
+// export default Mapa;
+
+
+
+
+
+
+
+//atualizacao do codigo para nova branch
+
+
+// pages/index.tsx
+// import AmbulanceMap from './AmbulanceMap';
+
+// const HomePage: React.FC = () => {
+//   return (
+//     <div>
+//       <h1>Mapa de Ambulâncias em Tempo Real</h1>
+//       <AmbulanceMap />
+//     </div>
+//   );
+// };
+
+// export default HomePage;
+
+
+// pages/index.tsx
+import GoogleMapComponent from './GoogleMap';
+
+const HomePage: React.FC = () => {
+  return (
     <div>
-        <Header option={1}/>
-      <h1>Welcome to Next.js!</h1>
-      <MapWithMarker />
-      <Footer/>
+      <h1>Mapa do Google</h1>
+      <GoogleMapComponent />
     </div>
- );
+  );
 };
 
-export default Map;
+export default HomePage;
+

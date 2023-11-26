@@ -9,6 +9,7 @@
 
 
 
+
 // export default function Map() {
 //   const mapRef = React.useRef<HTMLDivElement>(null);
 
@@ -148,134 +149,202 @@
 // export {Map}
 // export {PositionTracker}
 
-// src/App.tsx
-'use client'
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-import Image from 'next/image';
-import { useState } from 'react';
-import { MapContainer, TileLayer, Popup } from 'react-leaflet';
-import { LatLngExpression } from 'leaflet';
-import { GoogleMap, LoadScript} from "@react-google-maps/api";
-import { useEffect } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
 
-export function Map() {
-  const mapRef = React.useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const initMap = async () => {
-      //process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-      const loader = new Loader({
-        apiKey: "AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY",
-        // apiKey: 'AIzaSyCTyXYo2p8_QWgEWnQhNvs0oq_RyOIsA7Q', api do kevin
-        version: "weekly",
-      });
 
-      const { Map } = await loader.importLibrary("maps");
 
-      const position = {
-        lat: -22.834233317306676, //localizacao - PUC Campinas
-        lng: -47.04815712668725,
-        // -22.834233317306676, -47.04815712668725
-      };
 
-      // Defina as coordenadas para o marcador
-      const markerPosition = {
-        lat: -22.834233317306676,
-        lng: -47.04815712668725,
-      };
 
-      // Defina as configurações do mapa
-      const mapContainerStyle: React.CSSProperties = {
-        width: "100%",
-        height: "400px",
-      };
 
-      // Componente do mapa
-      function MyMap() {
-        return (
-          <LoadScript googleMapsApiKey="AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY">
-            <GoogleMap
-              mapContainerStyle={mapContainerStyle}
-              center={markerPosition}
-              zoom={8}
-            >
-              {/* Adicione o marcador */}
-              <Marker position={markerPosition} />
-            </GoogleMap>
-          </LoadScript>
-        );
-      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // src/App.tsx
+// 'use client'
+// import React, { Component } from 'react';
+// import GoogleMapReact from 'google-map-react';
+// import Image from 'next/image';
+// import { useState } from 'react';
+// import { MapContainer, TileLayer, Popup } from 'react-leaflet';
+// import { LatLngExpression } from 'leaflet';
+// import { GoogleMap, LoadScript} from "@react-google-maps/api";
+// import { useEffect } from "react";
+// import { Loader } from "@googlemaps/js-api-loader";
+// import {MyMap} from "./map"
+// import Mapa from './page';
+
+
+// export function Map() {
+//   const mapRef = React.useRef<HTMLDivElement>(null);
+
+//   useEffect(() => {
+//     const initMap = async () => {
+//       //process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+//       const loader = new Loader({
+//         apiKey: "AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY",
+//         // apiKey: 'AIzaSyCTyXYo2p8_QWgEWnQhNvs0oq_RyOIsA7Q', api do kevin
+//         version: "weekly",
+//       });
+
+//       const { Map } = await loader.importLibrary("maps");
+
+//       const position = {
+//         lat: -22.834233317306676, //localizacao - PUC Campinas
+//         lng: -47.04815712668725,
+//         // -22.834233317306676, -47.04815712668725
+//       };
+
+//       // Defina as coordenadas para o marcador
+//       const markerPosition = {
+//         lat: -22.834233317306676,
+//         lng: -47.04815712668725,
+//       };
+
+//       // Defina as configurações do mapa
+//       const mapContainerStyle: React.CSSProperties = {
+//         width: "100%",
+//         height: "100px",
+//       };
+
+//       // Componente do mapa
+//       function MyMap() {
+//         return (
+//           <LoadScript googleMapsApiKey="AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY">
+//             <GoogleMap
+//               mapContainerStyle={mapContainerStyle}
+//               center={markerPosition}
+//               zoom={15}
+//             >
+//               {/* Adicione o marcador */}
+//               <Marker position={markerPosition}/> 
+//             </GoogleMap>
+//           </LoadScript>
+//         );
+//       }
 
       
 
-      //map options
-      const mapOptions: google.maps.MapOptions = {
-        center: position,
-        zoom: 15,
-        // mapId: "MY_NEXTJS_MAPID",
-      };
+//       //map options
+//       const mapOptions: google.maps.MapOptions = {
+//         center: position,
+//         zoom: 15,
+//         // mapId: "MY_NEXTJS_MAPID",
+//       };
 
-      // Set up map
-      const map = new google.maps.Map(mapRef.current as HTMLDivElement, mapOptions);
-    };
-    initMap();
-    //https://www.youtube.com/watch?v=LgTan_NZnAg&t=477s&ab_channel=Grepsoft
-  }, []);
+//       // Set up map
+//       const map = new google.maps.Map(mapRef.current as HTMLDivElement, mapOptions);
+//     };
+//     initMap();
+//     //https://www.youtube.com/watch?v=LgTan_NZnAg&t=477s&ab_channel=Grepsoft
+//   }, []);
 
-  return <div style={{ height: "600px" }} ref={mapRef} />;
+//   return <div style={{ height: "400px" }} ref={mapRef} />;
+// }
+// interface MarkerProps {
+//   title: string;
+//   lat: number;
+//   lng: number;
+// }
+
+// const mapStyles: React.CSSProperties = {
+//   width: '50%',
+//   height: '50%'
+// };
+
+// const markerStyle: React.CSSProperties = {
+//   height: '50px',
+//   width: '50px',
+//   marginTop: '-50px'
+// };
+
+// const imgStyle: React.CSSProperties = {
+//   height: '100%'
+// };
+
+
+
+// const Marker: React.FC<MarkerProps> = ({ title, lat, lng }) => (
+//   <div style={markerStyle}>
+//     <img style={imgStyle} src="https://res.cloudinary.com/og-tech/image/upload/s--OpSJXuvZ--/v1545236805/map-marker_hfipes.png" alt={title} />
+//     <h3 style={{color: 'black'}}>{title}</h3>
+//   </div>
+// );
+
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <GoogleMapReact
+//           style={mapStyles}
+//           bootstrapURLKeys={{ key: 'AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY' }}
+//           defaultCenter={{ lat: -22.834233317306676, lng:  -47.04815712668725 }} //-22.834233317306676, -47.04815712668725
+//           defaultZoom={15}
+//         >
+//           <Marker
+//             title={'Current Location'}//alterar o texto para black
+//             lat={-22.834233317306676} 
+//             lng={ -47.04815712668725}
+//           />
+//         </GoogleMapReact>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+
+
+
+
+
+// Map.tsx
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+
+interface MapProps {
+  location: { lat: number; lng: number };
 }
-interface MarkerProps {
-  title: string;
-  lat: number;
-  lng: number;
-}
 
-const mapStyles: React.CSSProperties = {
-  width: '100%',
-  height: '100%'
+const Map: React.FC<MapProps> = ({ location }) => {
+  const position: [number, number] = [location.lat, location.lng];
+
+  const customIcon = new L.Icon({
+    iconUrl: '/marker-icon.png', // Você pode substituir isso pela imagem do seu marcador
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
+  });
+
+  return (
+    <MapContainer center={position} zoom={13} style={{ height: '400px', width: '100%' }}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position={position} icon={customIcon}>
+        <Popup>Seu marcador está aqui!</Popup>
+      </Marker>
+    </MapContainer>
+  );
 };
 
-const markerStyle: React.CSSProperties = {
-  height: '50px',
-  width: '50px',
-  marginTop: '-50px'
-};
-
-const imgStyle: React.CSSProperties = {
-  height: '100%'
-};
-
-
-
-const Marker: React.FC<MarkerProps> = ({ title, lat, lng }) => (
-  <div style={markerStyle}>
-    <img style={imgStyle} src="https://res.cloudinary.com/og-tech/image/upload/s--OpSJXuvZ--/v1545236805/map-marker_hfipes.png" alt={title} />
-    <h3>{title}</h3>
-  </div>
-);
-
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <GoogleMapReact
-          style={mapStyles}
-          bootstrapURLKeys={{ key: 'AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY' }}
-          defaultCenter={{ lat: -22.834233317306676, lng:  -47.04815712668725 }} //-22.834233317306676, -47.04815712668725
-          defaultZoom={15}
-        >
-          <Marker
-            title={'Current Location'}
-            lat={-22.834233317306676}
-            lng={ -47.04815712668725}
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default Map;
