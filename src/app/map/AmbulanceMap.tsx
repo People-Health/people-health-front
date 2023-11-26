@@ -15,7 +15,7 @@ const AmbulanceMap: React.FC = () => {
   const [ambulances, setAmbulances] = useState<Ambulance[]>([]);
 
   useEffect(() => {
-    const socket = io('http://localhost:4000');
+    const socket = io('http://localhost:3000');
 
     // Recebe a localização inicial das ambulâncias
     socket.on('initialAmbulanceLocations', (initialAmbulances: Ambulance[]) => {
