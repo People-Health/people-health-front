@@ -1,4 +1,5 @@
 // AmbulanceMap.tsx
+'use client'
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';

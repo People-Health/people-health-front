@@ -64,12 +64,17 @@
 
 // pages/index.tsx
 import GoogleMapComponent from './GoogleMap';
+import Header from '../header/header';
+import Footer from '../footer/footer';
+import websocket from '@pusher/pusher-websocket-react-native'
 
 const HomePage: React.FC = () => {
   return (
     <div>
       <h1>Mapa do Google</h1>
+      <Header option={1}/>
       <GoogleMapComponent />
+      <Footer/>
     </div>
   );
 };
