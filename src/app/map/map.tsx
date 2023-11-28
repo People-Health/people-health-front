@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 
 const containerStyle = {
   width: '100%',
-  height: '400px',
+  height: '650px',
 };
 
 const center = {
