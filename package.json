@@ -21,6 +21,7 @@
     "@types/googlemaps": "^3.43.3",
     "@types/react-leaflet": "^3.0.0",
     "@types/socket.io-client": "^3.0.0",
+    "@types/ws": "^8.5.10",
     "axios": "^1.6.2",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -38,7 +39,8 @@
     "remark": "13.0.0",
     "remark-html": "^13.0.1",
     "socket.io": "^4.7.2",
-    "socket.io-client": "^4.7.2"
+    "socket.io-client": "^4.7.2",
+    "ws": "^8.14.2"
   },
   "devDependencies": {
     "@types/google-map-react": "^2.1.10",
