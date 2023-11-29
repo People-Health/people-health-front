@@ -1,20 +1,17 @@
-
-import Map from "./map";
-import Footer from '../footer/footer';
+import React from 'react';
+import Map from './map';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Header option={1}/>
+      <h1>Localização em tempo real de ambulâncias</h1>
+      <Map />
+      <Footer/>
+    </div>
+  );
+};
 
-export default function MapPage(){
-
-
-    return (
-       <>
-       <Header option={1}/>
-        <h1>Map page. Aqui é a página do mapa</h1>
-        <Map></Map>
-        <Footer/>
-       </> 
-        
-
-    )
-}
+export default Home;

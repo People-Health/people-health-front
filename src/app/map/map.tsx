@@ -1,45 +1,50 @@
-"use client"
+'use client'
+import React, { useEffect, useState } from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import io from 'socket.io-client';
 
-import React,{useEffect} from 'react';
-import {Loader} from '@googlemaps/js-api-loader'
+const containerStyle = {
+  width: '100%',
+  height: '650px',
+};
 
-export default function Map(){
-    const mapRef=React.useRef<HTMLDivElement>(null);
+const center = {
+  lat: -23.550520,
+  lng: -46.633308,
+};
 
-    useEffect(()=>{
-        const initMap=async ()=>{
-           
+const Map: React.FC = () => {
+  const [ambulanceLocations, setAmbulanceLocations] = useState([
+    { id: 1, lat: -23.550520, lng: -46.633308 },
+    { id: 2, lat: -23.545520, lng: -46.628308 },
+    { id: 3, lat: -23.560520, lng: -46.638308 },
+  ]);
 
-        //process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-        const loader= new Loader({
-            apiKey: 'AIzaSyCTyXYo2p8_QWgEWnQhNvs0oq_RyOIsA7Q',
-            version: 'weekly'
-        });
+  useEffect(() => {
+    const socket = io('http://localhost:3001'); // Substitua pelo endereço do seu servidor Socket.IO
 
-        const {Map} = await loader.importLibrary('maps');
+    socket.on('updateLocation', (updatedLocation) => {
+      setAmbulanceLocations((prevLocations) =>
+        prevLocations.map((location) =>
+          location.id === updatedLocation.id ? updatedLocation : location
+        )
+      );
+    });
 
-        const position={
-            lat:43.642693,
-            lng: -79.3871189
-        }
-        //map options
-        const mapOptions: google.maps.MapOptions={
-            center:position,
-            zoom:17,
-            mapId:'MY_NEXTJS_MAPID',
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
 
-        }
-        //set up map
-        const map = new Map(mapRef.current as HTMLDivElement,mapOptions)
+  return (
+    <LoadScript googleMapsApiKey="AIzaSyAhZlf9fcGxTFa6YKRghtLhI_pawBBM8aY">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
+        {ambulanceLocations.map((ambulance) => (
+          <Marker key={ambulance.id} position={{ lat: ambulance.lat, lng: ambulance.lng }} />
+        ))}
+      </GoogleMap>
+    </LoadScript>
+  );
+};
 
-    }
-    initMap();
-    //https://www.youtube.com/watch?v=LgTan_NZnAg&t=477s&ab_channel=Grepsoft
-
-    },[]);
-
-
-    return (
-        <div style={{height:'600px'}} ref={mapRef}/>
-    );
-}
+export default Map;
