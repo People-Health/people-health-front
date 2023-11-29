@@ -30,3 +30,26 @@
     text-align: 'center';
     padding: '10px'
 }
+
+.mensagemLogin{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    padding: 10%;
+}
+
+.usuario{
+
+    /* border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px; */
+    color: black;
+}
+
+.senha{
+
+    /* border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px; */
+    color: black;
+}
