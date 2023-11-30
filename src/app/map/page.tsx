@@ -10,7 +10,6 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header option={1}/>
-      <h1>Localização em tempo real de ambulâncias</h1>
       <Map/>
       <Footer/>
     </div>
