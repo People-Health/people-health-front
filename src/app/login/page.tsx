@@ -2,8 +2,8 @@
 
 import React, {useState} from "react";
 import style from  './login.module.css';
-import Footer from '../footer/footer';
-import Header from "../header/header";
+import Footer from '../component.footer/footer';
+import Header from "../component.header/header";
 
 
 const  Login=()=>{
@@ -26,16 +26,16 @@ const  LoginForm=()=>{
         <form style={{display:'flex',flexDirection:'column',width:'300px'}}>
             <label className={style.mensagemLogin}>
                 <h1>
-                    Faça seu login aqui!
+                    Login:
                 </h1>
             </label>
             <label className={style.usuario} style={{display:'flex', justifyContent:'space-between'}}>
                 Usuário: 
-                <input type='text'placeholder=" Usuario:" name="username" style={{marginBottom:'10px', color: 'black'}}/>
+                <input type='text'placeholder="  Usuário *" name="username" style={{marginBottom:'10px', color: 'black'}}/>
             </label>
             <label className={style.senha} style={{display:'flex', justifyContent:'space-between'}}>
                 Senha:
-                <input type="password" placeholder=' Senha:'  name="password" style={{marginBottom:'10px', color: 'black'}}/>
+                <input type="password" placeholder='  Senha *'  name="password" style={{marginBottom:'10px', color: 'black'}}/>
             </label>
             <div style={{display:'flex', justifyContent:'center'}}>
                 <button type="submit" style={{backgroundColor:'#1F2B6C',width:'70px'}}>Entrar</button>

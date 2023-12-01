@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
 //import Mapa from './map';
-import Header from '../header/header';
-import Footer from '../footer/footer';
+import Header from '../component.header/header';
+import Footer from '../component.footer/footer';
 import Map from './map';
 
 
