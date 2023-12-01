@@ -1,8 +1,9 @@
 .container{
     display:'flex';
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
     background-color:#BFD2F8;
+    
 }
 
 .formContainer{
@@ -28,7 +29,9 @@
     background-color: 'black';
     color: 'white';
     text-align: 'center';
-    padding: '10px'
+    padding: '10px';
+    
+
 }
 
 .mensagemLogin{
@@ -36,6 +39,8 @@
     text-shadow: blue;
     text-align: center;
     padding: 10%;
+    font-size:xx-large;
+    
 }
 
 .usuario{

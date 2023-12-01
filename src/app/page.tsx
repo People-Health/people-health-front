@@ -11,10 +11,10 @@ import femaleDoctors from "../../public/femaleDoctors.jpg";
 import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
 
 import Link from 'next/link';
-import Footer from './footer/footer';
-import Header from './header/header';
-import FaixaLogo from './logoFaixa/logoFaixa';
-import LogoFaixa from './logoFaixa/logoFaixa';
+import Footer from './component.footer/footer';
+import Header from './component.header/header';
+import FaixaLogo from './component.logoFaixa/logoFaixa';
+import LogoFaixa from './component.logoFaixa/logoFaixa';
 
 
 export default function Home() {
