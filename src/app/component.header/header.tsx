@@ -22,7 +22,9 @@ type HeaderProps = {
                     <button className={style.button} >Serviços</button>
                     <button className={style.button}>Contato</button>
                 </div>
-                <button className={style.logInOutBtn}><Link href="/login">Login</Link></button>
+                <button className={style.logInOutBtn}>
+                    <Link href="/login">Login</Link>
+                </button>
             
             </header>
           );

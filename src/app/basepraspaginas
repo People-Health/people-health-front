@@ -1,0 +1,29 @@
+// import Image from 'next/image'
+// import style from "../../app/personal-info/personal-info.module.css"
+
+// import Footer from '../component.footer/footer';
+// import Header from "../component.header/header";
+// import LogoFaixa from '../component.logoFaixa/logoFaixa';
+
+// export default function Info() {
+//     return (
+//         <div>
+//             <LogoFaixa/>
+//             <Header option={2}/>
+//             <div className={style.teste}>
+//                 <h1>Informações Pessoais</h1>
+//             </div>
+//             <Footer/>
+//         </div>
+//     )
+// }
+// ----------------------------------------------------------------------------------------------------------------
+// .teste{
+//     background-color: #ffff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     color:black;
+//     height: 30rem;    
+// }
