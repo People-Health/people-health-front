@@ -3,6 +3,7 @@ import ComercialPage from '../page';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoRed from '../../../public/favicon.ico';
+import logo from '../../../public/logo.png';
 
 
 type HeaderProps = {

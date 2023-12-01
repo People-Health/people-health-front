@@ -9,13 +9,13 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -23.550520,
-  lng: -46.633308,
+  lat: -22.833969889616544, // localizacao da PUC Campinas lat:-22.833969889616544, lng:-47.05262714433426 
+  lng: -47.05262714433426,
 };
 
-const Map: React.FC = () => {
+const Mapa: React.FC = () => {
   const [ambulanceLocations, setAmbulanceLocations] = useState([
-    { id: 1, lat: -23.550520, lng: -46.633308 },
+    { id: 1, lat: -22.833969889616544, lng: -47.05262714433426 },
     { id: 2, lat: -23.545520, lng: -46.628308 },
     { id: 3, lat: -23.560520, lng: -46.638308 },
   ]);
@@ -47,4 +47,4 @@ const Map: React.FC = () => {
   );
 };
 
-export default Map;
+export default Mapa;

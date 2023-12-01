@@ -13,12 +13,16 @@ import femaleDoctors2 from "people-health-front\public\femaleDoctors.jpg";
 import Link from 'next/link';
 import Footer from './footer/footer';
 import Header from './header/header';
+import FaixaLogo from './logoFaixa/logoFaixa';
+import LogoFaixa from './logoFaixa/logoFaixa';
 
 
 export default function Home() {
   return (
     <>
     <main className={style.container}>
+      <LogoFaixa/> 
+
       <Header option={0}/>
 
       <div className={style.doctor}>
