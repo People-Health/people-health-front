@@ -288,6 +288,25 @@ export default function register() {
             />
           </label>
         </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "10px",
+            width: "1525px",
+          }}
+        >
+          <button
+            type="submit"
+            style={{
+              backgroundColor: "#1F2B6C",
+              width: "100px",
+              padding: "10px",
+            }}
+          >
+            Cadastrar
+          </button>
+        </div>
       </main>
       <Footer />
     </>
