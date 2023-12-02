@@ -1,0 +1,34 @@
+.container{
+    display:'flex';
+    height: 120vh;
+    background-color:#BFD2F8;
+    height: max-content;
+    
+}
+
+.infos{
+    color: black;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+.text1{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    padding: 5px;
+    font-size:x-large;
+    font-weight:bold;
+    
+}
+
+.text2{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    padding: 5px;
+    font-size:large;
+    font-weight:bold;
+    
+}

@@ -1,0 +1,47 @@
+.fundo{
+   background-color: #fff;
+   padding: 2rem 7rem 2rem 7rem;
+}
+
+.lousapequena{
+    background-color: #1c2c6c;
+    width: 100%;
+    font-size: 2.5rem;
+    /* font-weight: ; */
+    font-family: Work Sans;
+    color: #bfd2f8;
+    padding: 1rem 0 0 4rem;
+}
+
+.lousagrande{
+    display: flex;
+    background-color: #1c2c6c;
+    width: 100%;
+    height: 22rem;
+    align-items: center;
+}
+
+
+.imgperfil{
+    width: 15rem;
+    height: 15rem;
+    margin-left: 6rem;
+}
+
+.lousadados > h1{
+    display: block;
+    color: #fff;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+    font-weight:500;
+    font-size: 1.3rem;
+} 
+
+.dadosrecebidos > h1{
+    display: block;
+    color: #fff;
+    margin-left: 10rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
