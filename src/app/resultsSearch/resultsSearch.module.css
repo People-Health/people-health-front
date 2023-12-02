@@ -1,0 +1,16 @@
+.results{
+    display:'flex';
+    height: 120vh;
+    background-color:#BFD2F8;
+    
+}
+
+.info{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    padding: 5px;
+    font-size:x-large;
+    font-weight:bold;
+    
+}
