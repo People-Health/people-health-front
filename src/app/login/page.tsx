@@ -4,11 +4,15 @@ import React, {useState} from "react";
 import style from  './login.module.css';
 import Footer from '../component.footer/footer';
 import Header from "../component.header/header";
+import LogoFaixa from "../component.logoFaixa/logoFaixa";
+import Link from 'next/link';
+
 
 
 const  Login=()=>{
     return(
         <div className={style.container} style={{display:'flex'}}> {/*preciso dizer que o display é flex no css inline tbm */}
+        <LogoFaixa/>
         <Header option={0} />
             <main style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <LoginForm/>
@@ -31,14 +35,16 @@ const  LoginForm=()=>{
             </label>
             <label className={style.usuario} style={{display:'flex', justifyContent:'space-between'}}>
                 Usuário: 
-                <input type='text'placeholder="  Usuário *" name="username" style={{marginBottom:'10px', color: 'black'}}/>
+                <input type='text'placeholder=' usuário *' name="username" style={{marginBottom:'10px', color: 'black', fontWeight:'normal'}}/>
             </label>
             <label className={style.senha} style={{display:'flex', justifyContent:'space-between'}}>
                 Senha:
-                <input type="password" placeholder='  Senha *'  name="password" style={{marginBottom:'10px', color: 'black'}}/>
+                <input type="password" placeholder=' senha *'  name="password" style={{marginBottom:'10px', color: 'black', fontWeight:'normal'}}/>
             </label>
-            <div style={{display:'flex', justifyContent:'center'}}>
-                <button type="submit" style={{backgroundColor:'#1F2B6C',width:'70px'}}>Entrar</button>
+            <div style={{display:'flex', justifyContent:'center',paddingTop:'2rem'}}>
+                <button type="submit" style={{backgroundColor:'#1F2B6C',width:'8rem', padding:'0.5rem'}}>
+                    <Link href="/info">Login</Link>
+                </button>
             </div>
             
         </form>

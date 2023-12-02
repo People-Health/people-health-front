@@ -58,6 +58,12 @@
    background-color: #d7d8dd;
 }
 
+.Hospitancia{
+   display: flex;
+   padding: 0 7rem;
+   background-color: #d7d8dd;
+}
+
 .parcerias {
    display: flex;
    background-color: #fff;

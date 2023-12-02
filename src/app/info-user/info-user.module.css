@@ -1,0 +1,29 @@
+.fundo{
+   background-color: #fff;
+   padding: 3rem 7rem 10rem 7rem;
+}
+
+.lousa{
+    background-color: #1c2c6c;
+    height: 20rem;
+    width: 100%;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 4rem;
+    font-family: Work Sans;
+}
+
+.imgperfil{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 7rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.dadosperfil{
+
+}
