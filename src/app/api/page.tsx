@@ -16,10 +16,9 @@ lista.forEach(async (coordenadas) => {
   try {
     // Substitua 'http://meuservidor.com/api/minha-rota' pela URL do seu serviço de geolocalização.
     // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
-    const response: AxiosResponse = await axios.get('http://localhost:3000/map', {
-      params: {
-        minhasCoordenadas: coordenadas,
-      },
+
+    const response: AxiosResponse = await axios.get('http://localhost:3004/map', {
+      
     });
 
     console.log(response.data);
