@@ -1,8 +1,0 @@
-Index: src/mapPage.tsx
-===================================================================
-diff --git a/src/mapPage.tsx b/src/mapPage.tsx
---- a/src/mapPage.tsx	
-+++ b/src/mapPage.tsx	
-@@ -1,0 +1,1 @@
-+teste
-\ No newline at end of file

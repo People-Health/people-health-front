@@ -7,7 +7,7 @@ import axios,{AxiosResponse} from 'axios'
 // Suponha que esta é a sua lista de coordenadas.
 const lista: { lat: number; lng: number }[] = [
   { lat: -23.5505, lng: -46.6333 },
-  { lat: -22.9068, lng: -43.1729 },
+  { lat: -22.9068, lng: -43.1729 },           
   // Adicione mais coordenadas conforme necessário.
 ];
 
@@ -18,7 +18,6 @@ lista.forEach(async (coordenadas) => {
     // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
 
     const response: AxiosResponse = await axios.get('http://localhost:3004/map', {
-      
     });
 
     console.log(response.data);
