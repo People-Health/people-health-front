@@ -27,12 +27,6 @@ export default function Search() {
             <input type="text" placeholder=" cpf *" name="cpf" />
           </label>
         </div>
-        <div>
-          <label className="form-label">
-            File
-            <input type="file" accept="application/pdf" />
-          </label>
-        </div>
         <div
           style={{
             display: "flex",
