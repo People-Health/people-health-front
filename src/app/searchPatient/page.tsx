@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "../../app/search/search.module.css";
+import style from "../../app/searchPatient/search.module.css";
 import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
