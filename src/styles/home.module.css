@@ -1,8 +1,22 @@
+ .faixa{
+   display: flex;
+   background-color: #fff;
+}
 
+.blocobranco{
+   background-color: #fff;
+   margin-left: 6.4rem;
+}
+
+.icon{
+   /* margin-left: 6.4rem; */
+   max-height: 3rem;
+   max-width: 3rem;
+   margin-top: 0.3rem;
+}
 
 .logo {
-   padding: 1.18rem 0 1.18rem 7rem;
-   background-color: #fff;
+   padding: 1.18rem 0 1.18rem 1rem;
 }
 
 .header {
@@ -54,8 +68,9 @@
 
 .doctor {
    display: flex;
-   padding: 0 7rem;
-   background-color: #d7d8dd;
+   position: relative;
+   justify-content: center;
+   background-color: #ffff;
 }
 
 .Hospitancia{
@@ -66,8 +81,9 @@
 
 .parcerias {
    display: flex;
-   background-color: #fff;
-   justify-content: center;
+   top: 85%;
+   position: absolute;
+   left: 15%;
 }
 
 .parceria1 {
@@ -102,21 +118,37 @@
    line-height: 1.4rem;
 }
 
-.azulClaro {
+.azulClaro1 {
    display: flex;
    justify-content: center;
    background-color: #fff;
    color: #159EEC;
-   padding-top: 5.7rem;
+   padding-top: 7rem;
    text-transform: uppercase;
 
-   font-family: Work Sans;
    font-size: 1.3rem;
    font-style: normal;
    font-weight: 700;
    line-height: normal;
    letter-spacing: 0.05rem;
    text-transform: uppercase;
+}
+
+.azulClaro2 {
+   display: flex;
+   justify-content: center;
+   background-color: #fff;
+   color: #159EEC;
+   padding-top: 1rem;
+   text-transform: uppercase;
+
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 0.05rem;
+   text-transform: uppercase;
+   padding-bottom: 5.5rem;
 
 }
 
@@ -125,12 +157,11 @@
    justify-content: center;
    background-color: #fff;
    color: #1c2c6c;
-   padding-top: 0.5rem;
+   padding-top: 0.3rem;
 
-   font-family: Yeseva One;
    font-size: 2.5rem;
    font-style: normal;
-   font-weight: 600;
+   font-weight: 700;
    line-height: normal;
 }
 
@@ -141,10 +172,9 @@
    color: #000;
    padding: 0.2rem 10rem 0rem 10rem;
 
-   font-family: Work Sans;
-   font-size: 1rem;
+   font-size: 0.8rem;
    font-style: normal;
-   font-weight: 400;
+   font-weight: 500;
    line-height: 1.4rem;
 }
 
@@ -156,7 +186,7 @@
    display: flex;
    background-color: #fff;
    justify-content: center;
-   padding-top: 2rem;
+   padding-top: 1rem;
 }
 
 .areaServicos {
@@ -174,14 +204,52 @@
    align-items: center;
 }
 
-.exame {
-   display: flex;
-   background-color: #fff;
-   padding: 2rem 11rem 1.3rem 50rem;
+.imgservicos{
+   max-width: 22rem;
 }
 
-.femaleDoctors {
+.lousaservico{
    display: flex;
+   justify-content: space-around;
    background-color: #fff;
-   padding: 1rem 11rem 1.3rem 50rem;
+   width: 100%;
+   height: auto;
 }
+
+.coluna1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: #000;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.coluna2{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   color: #000;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.titulozinho{
+   font-size: 1.3rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+.servicos{
+   margin-bottom: 0.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #110ee9;
+}
+
+.explicacao{
+   margin-top: 1rem;
+   max-width: 28rem;
+}
+
+

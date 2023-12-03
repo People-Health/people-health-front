@@ -43,7 +43,13 @@ const  LoginForm=()=>{
             </label>
             <div style={{display:'flex', justifyContent:'center',paddingTop:'2rem'}}>
                 <button type="submit" style={{backgroundColor:'#1F2B6C',width:'8rem', padding:'0.5rem'}}>
-                    <Link href="/info">Login</Link>
+                    {/* if (user==medico): */}
+                    <Link href="/info-user">Login User</Link>
+                    {/* else:*/}
+                    {/* <Link href="/info-paciente">Login</Link>  */}
+                </button>
+                <button type="submit" style={{backgroundColor:'#1F2B6C',width:'8rem', padding:'0.5rem', marginLeft:'1rem'}}> {/*Apagar Este Depois*/}
+                    <Link href="/info-doctor">Login Doctor</Link>
                 </button>
             </div>
             

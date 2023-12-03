@@ -1,0 +1,39 @@
+.fundo{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+    padding: 2rem 8rem 2rem 7rem;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #1F2B6C;
+    font-size: 2rem;
+    font-weight: 550;
+    font-size: 2rem;
+    font-family: Work Sans;
+    margin-bottom: 2rem;
+}
+
+.tituloexam{
+    background-color: #1c2c6c;
+    padding: 2rem 0 0rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dadosExam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1c2c6c;
+}
+
+.button:hover{
+    background-color:#bfd2f8;
+    color: #1F2B6C;
+    border-radius: 0.5rem;
+}

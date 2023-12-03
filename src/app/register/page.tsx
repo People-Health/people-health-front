@@ -302,9 +302,10 @@ export default function register() {
               backgroundColor: "#1F2B6C",
               width: "100px",
               padding: "10px",
+              marginBottom: '2rem'
             }}
           >
-            Cadastrar
+            Salvar
           </button>
         </div>
       </main>
