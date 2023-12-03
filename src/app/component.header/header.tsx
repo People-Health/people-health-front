@@ -15,18 +15,34 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
     return (
       <header className={style.header}>
         <div className={style.menuBtnsContainer}>
-          <Image
+          {/* <Image
             width={40}
             src={logoRed}
             style={{ paddingRight: "10px" }}
             alt="logo"
-          />
+          /> */}
           <button className={style.button}>
             <Link href="/">Início</Link>
           </button>
-          <button className={style.button}>Sobre nós</button>
-          <button className={style.button}>Serviços</button>
-          <button className={style.button}>Contato</button>
+
+          <button className={style.button}>
+          <Link href="/#sobrenos">
+            Sobre nós
+          </Link>
+          </button>
+
+          <button className={style.button}>
+          <Link href="/#servicos">
+            Serviços
+          </Link>
+          </button>
+
+          <button className={style.button}>
+          <Link href="/#contato">
+            Contato
+          </Link>
+            </button>
+
         </div>
         <button className={style.logInOutBtn}>
           <Link href="/login">Login</Link>
@@ -39,24 +55,25 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
     return (
       <header className={style.header}>
         <div className={style.menuBtnsContainer}>
-          <Image
+          {/* <Image
             width={40}
             src={logoRed}
             style={{ paddingRight: "10px" }}
             alt="logo"
-          />
+          /> */}
           <button className={style.button}>
-            <Link href="/">Início</Link>
+            <Link href="/info-doctor">Início</Link>
           </button>
           <button className={style.button}>
             <Link href="/search">Consultar Paciente</Link>
           </button>
           <button className={style.button}>
-            {" "}
-            <Link href="/register">Cadastrar Paciente</Link>
+          <Link href="/registerPatientData">Cadastrar Paciente</Link>
           </button>
-          <button className={style.button}>Atualizar dados paciente</button>
-          <button className={style.button}>Mapa</button>
+          <button className={style.button}>
+          <Link href="/updatePatientData">Atualizar dados paciente</Link>
+          </button>
+          <button className={style.button}><Link href="/map">Mapa</Link></button>
         </div>
         <button className={style.logInOutBtn}>
           <Link href="/">Logout</Link>
@@ -70,17 +87,24 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
     return (
       <header className={style.header}>
         <div className={style.menuBtnsContainer}>
-          <Image
+          {/* <Image
             width={40}
             src={logoRed}
             style={{ paddingRight: "10px" }}
             alt="logo"
-          />
+          /> */}
           <button className={style.button}>
-            <Link href="">Início</Link>
+            <Link href="/info-user">Início</Link>
           </button>
-          <button className={style.button}>Exames</button>
-          <button className={style.button}>Dados médicos</button>
+
+          <button className={style.button}>
+            <Link href="/exam-user">Exames</Link>
+          </button>
+
+          <button className={style.button}>
+            <Link href="/medical-data-user">Dados Médicos</Link>
+          </button>
+
         </div>
         <button className={style.logInOutBtn}>
           <Link href="/">Logout</Link>

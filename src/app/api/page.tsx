@@ -1,7 +1,7 @@
-
+//vamos excluir esse diretorio api.
 'use client'
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { useEffect, useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import axios,{AxiosResponse} from 'axios'
 
 // Suponha que esta é a sua lista de coordenadas.
@@ -12,19 +12,19 @@ const lista: { lat: number; lng: number }[] = [
 ];
 
 // Faz uma requisição para cada conjunto de coordenadas na lista.
-lista.forEach(async (coordenadas) => {
-  try {
-    // Substitua 'http://meuservidor.com/api/minha-rota' pela URL do seu serviço de geolocalização.
-    // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
+// lista.forEach(async (coordenadas) => {
+//   try {
+//     // Substitua 'http://meuservidor.com/api/minha-rota' pela URL do seu serviço de geolocalização.
+//     // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
 
-    const response: AxiosResponse = await axios.get('http://localhost:3004/map', {
-    });
+//     const response: AxiosResponse = await axios.get('http://localhost:3004/map', {
+//     });
 
-    console.log(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-});
+//     console.log(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
 
 const Localizacao = () => {
   const [position, setPosition] = useState<{ lat: number; lng: number }>({ lat: -23.5505, lng: -46.6333 });

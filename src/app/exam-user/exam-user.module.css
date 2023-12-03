@@ -1,0 +1,35 @@
+.fundo{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #1F2B6C;
+    font-size: 2rem;
+    font-weight: 550;
+    font-size: 2rem;
+    font-family: Work Sans;
+}
+
+.examnull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.exam{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

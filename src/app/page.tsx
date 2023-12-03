@@ -25,7 +25,7 @@ export default function Home() {
         <Header option={0} />
 
         <div className={style.doctor}>
-          <Image src={doctor} alt="doctor" />
+          <Image  src={doctor} alt="doctor" />
         </div>
 
         <div className={style.parcerias}>
@@ -37,8 +37,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={style.azulClaro}>
-          <h1>Bem Vindo ao People Health!</h1>
+        <div className={style.azulClaro1}>
+          <h1 id="sobrenos" >Bem Vindo ao People Health!</h1>
         </div>
 
         <div className={style.azulEscuro}>
@@ -58,25 +58,31 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className={style.azulClaro}>
+          <h1 className={style.azulClaro2}>
             Promovendo a saúde e confiabilidade
           </h1>
-          <h2 className={style.azulEscuro}>Nossos serviços</h2>
+          <h2 id="servicos" className={style.azulEscuro}>Nossos serviços</h2>
         </div>
+          
+        <div className={style.lousaservico}>
+          <div className={style.coluna1}>
+            <h1 className={style.titulozinho} >Nosso compromisso é com a sua saúde!</h1>
+            <h2 className={style.servicos}>● Sistema para os Hospitais</h2>
+            <h2 className={style.servicos}>● Rastreamento em tempo real das Ambulâncias</h2>
+            <h2 className={style.servicos}>● Aplicativo para os Pacientes</h2>
+            <h2 className={style.servicos}>● Upsell para Convênios</h2>
 
-        <div className={style.fim}></div>
+            <h3 className={style.explicacao}>● Aplicativo e site para pacientes: Os pacientes poderão entrar no nosso aplicativo e site para consultar suas informações clínicas, como exames já realizados,cirurgias, tipo sanguíneo,alergia de medicações, entre outros.</h3>
+            <h3 className={style.explicacao}>● Sistema global dos hospitais: Para evitar o processo de cadastro de novos pacientes quando são novos em um hospital,utilize o sistema de gerenciamento de informações clínicas para agilizar o atendimento ao máximo.</h3>
+            <h3 className={style.explicacao}>● Rastreio de ambulâncias: Todas as ambulâncias dos hospitais serão rastreadas em tempo real para aumentar a eficiência no atendimento de emergências.</h3>
+            <h3 className={style.explicacao}>● Convênios poderão utilizar: Os convênios poderão oferecer um cadastro no  sistema para seus clientes para aumentar a eficiência no atendimento de todos.</h3>
 
-        <div className={style.areaServicos}>
-          <h1 className={style.TXTservicos}>Esse texto</h1>
-
-          <div className={style.exame}>
-            <Image src={exame2} alt="exame" />
           </div>
-
-          <div className={style.femaleDoctors}>
-            <Image src={femaleDoctors} alt="doutoras" />
+          <div className={style.coluna2}>
+            <Image className={style.imgservicos} src={exame2} alt="exame2" />
+            <Image className={style.imgservicos} src={femaleDoctors} alt="femaleDoctors" />
           </div>
-        </div>
+        </div>        
       </main>
       <Footer />
     </>
