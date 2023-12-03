@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
       </div>
       <hr></hr>
-      <div className={style.footerEnd}>
+      <div id="contato" className={style.footerEnd}>
         <p>© 2023 People Health All Rights Reserved by PNTEC-LTD</p>
       </div>
     </footer>
