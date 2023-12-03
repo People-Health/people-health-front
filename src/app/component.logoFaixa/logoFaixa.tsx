@@ -9,7 +9,6 @@ export default function LogoFaixa() {
     return (
           <div className={style.faixa}>
               <div className={style.blocobranco}>
-
               </div>
 
               <div>

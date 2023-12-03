@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "../../app/register/register.module.css";
+import style from "../../app/updatePatientData/updatePatientData.module.css";
 import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
@@ -12,7 +12,7 @@ export default function register() {
         <LogoFaixa />
         <Header option={1} />
         <label className={style.text1}>
-          <h1>Cadastrar Paciente</h1>
+          <h1>Atualizar dados do paciente</h1>
         </label>
         <label className={style.text2}>
           <h1>Informações Pessoais:</h1>
