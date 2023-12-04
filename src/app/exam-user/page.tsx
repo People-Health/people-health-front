@@ -5,23 +5,6 @@ import Footer from '../component.footer/footer';
 import Header from "../component.header/header";
 import LogoFaixa from '../component.logoFaixa/logoFaixa';
 
-
-// if (noExams == true) {
-//     return(
-//         <div>
-//             <LogoFaixa/>
-//             <Header option={2}/>
-//             <div className={style.fundo}>
-//             <div className={style.titulo}>Exames:</div>
-//             <div>
-//                 <h1 className={style.examnull}>Nenhum Exame cadastrado!</h1>
-//             </div>
-//             </div>
-//             <Footer/>
-//         </div>)}
-//  else {
-
-
 export default function Exam() {
     return (
         
