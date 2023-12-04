@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
           <button className={style.button}><Link href="/map">Mapa</Link></button>
         </div>
         <button className={style.logInOutBtn}>
-          <Link href="/">Logout</Link>
+          <Link href="/login">Logout</Link>
         </button>
       </header>
     );
@@ -102,12 +102,12 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
           </button>
 
           <button className={style.button}>
-            <Link href="/medical-data-user">Dados Médicos</Link>
+            <Link href="/medical-data-user">Ficha Médica</Link>
           </button>
 
         </div>
         <button className={style.logInOutBtn}>
-          <Link href="/">Logout</Link>
+          <Link href="/login">Logout</Link>
         </button>
       </header>
     );

@@ -1,39 +1,55 @@
 .fundo{
     background-color: #fff;
+    padding: 2rem 15rem 2rem 15rem;
+}
+
+.lousapequena{
+    display: flex;
+    background-color: #1c2c6c;
     width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    height: auto;
-    padding: 2rem 8rem 2rem 7rem;
-}
-
-.titulo{
-    display: flex;
+    font-size: 2rem;
     justify-content: center;
-    color: #1F2B6C;
-    font-size: 2rem;
-    font-weight: 550;
-    font-size: 2rem;
     font-family: Work Sans;
-    margin-bottom: 2rem;
+    color: #bfd2f8;
 }
 
-.tituloexam{
-    background-color: #1c2c6c;
-    padding: 2rem 0 0rem 0;
+.lousaFixo{
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    background-color: #1c2c6c;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+ }
 
-.dadosExam{
+ .lousaDados{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: #1c2c6c;
-}
+    width: 100%;
+    height: auto;
+ }
 
 .button:hover{
     background-color:#bfd2f8;
-    color: #1F2B6C;
-    border-radius: 0.5rem;
+    color: #1c2c6c;
+    border-radius: 1.5rem;
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 9rem;
+    padding-bottom: 2rem;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c2c6c;
 }
