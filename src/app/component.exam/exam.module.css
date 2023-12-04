@@ -1,0 +1,26 @@
+.container{
+    /* background-color:#BFD2F8; */
+    /* background-color: #1f2b6c; */
+    background-color: grey;
+    color: black;
+    padding:20px;
+    border-radius: 5%;
+    width:50%;
+    margin: 0 auto; 
+}
+.title{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    padding: 5px;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.listContainer{
+    margin-bottom: 20px;;
+}
+
+.button{
+    font-weight: bold;
+}

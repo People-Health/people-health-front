@@ -4,6 +4,7 @@ import style from "../../app/exam-user/exam-user.module.css"
 import Footer from '../component.footer/footer';
 import Header from "../component.header/header";
 import LogoFaixa from '../component.logoFaixa/logoFaixa';
+import ExamComponent from '../component.exam/exam';
 
 export default function Exam() {
     return (
@@ -15,8 +16,31 @@ export default function Exam() {
                 <div className={style.titulo}>Exames:</div>
 
                 <div className={style.exam}>
-                    <h1>Exame 1</h1>
-                    <h1>Exame 2</h1>
+                    <ExamComponent
+                        title={'Ressonância'} 
+                        local='Hospital samaritano'
+                        date='03/05/1999'
+                        category='Exame' 
+                        file='No file'/>
+                        <ExamComponent
+                        title={'Hemograma'} 
+                        local='Hospital da Sé'
+                        date='07/09/1989'
+                        category='Exame' 
+                        file='No file'/>
+                        <ExamComponent
+                        title={'Retirada vísicula'} 
+                        local='Hospital Santa Maria'
+                        date='07/10/1988'
+                        category='Cirurgia' 
+                        file='No file'/>
+                          <ExamComponent
+                        title={'Eletrocardiograma'} 
+                        local='Laboratório Sabin'
+                        date='09/12/2023'
+                        category='Exame' 
+                        file='No file'/>
+                   
                 </div>
                 
             </div>
