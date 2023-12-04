@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcfc782a-455f-4240-9ccb-46cbb9a90f5f" name="Changes" comment="testando commit">
-      <change beforePath="$PROJECT_DIR$/src/app/api/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/map/map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/map/map.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="6dab75cf-7d06-4c40-a7c4-976da0926647" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,14 +45,14 @@
     "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "mapaTesteNovaVersao",
-    "last_opened_file_path": "C:/Users/felti/Downloads/people-health/people-health-backend-develop",
+    "git-widget-placeholder": "MapaEmTempoReal",
+    "last_opened_file_path": "C:/Users/felti/Projetos/people-health-front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "show.migrate.to.gradle.popup": "false",
     "ts.external.directory.path": "C:\\Users\\felti\\Projetos\\people-health-front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -88,6 +86,8 @@
       <updated>1699716875880</updated>
       <workItem from="1699716877235" duration="11319000" />
       <workItem from="1701012783997" duration="170000" />
+      <workItem from="1701641511760" duration="315000" />
+      <workItem from="1701646034998" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="testando commit">
       <option name="closed" value="true" />
