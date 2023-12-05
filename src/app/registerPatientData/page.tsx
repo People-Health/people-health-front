@@ -1,16 +1,33 @@
+'use client'
 import Image from "next/image";
-import style from "../../app/registerPatientData/register.module.css";
+import style from "../registerPatientData/register.module.css"
 import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
 import LogoFaixa from "../component.logoFaixa/logoFaixa";
 
-export default function register() {
+import ExamInput from "../component.exam-input-doctor/exam-input";
+import {useState} from "react";
+
+export default function Register() {
+  const [examInputIds,setExamInputIds]=useState<number[]>([]);
+  
+  function removeExamInput(id:number){
+   setExamInputIds(examInputIds.filter((value)=>value!==id))
+  }
+  function addExamInput(){
+    const id=Date.now();
+   setExamInputIds([...examInputIds,id]);
+   
+ }
+ 
   return (
-    <>
+    <> 
+    <LogoFaixa />
+    <Header option={1} />
+
       <main className={style.container}>
-        <LogoFaixa />
-        <Header option={1} />
+        
         <label className={style.text1}>
           <h1>Cadastrar Paciente</h1>
         </label>
@@ -31,7 +48,7 @@ export default function register() {
             <input type="text" placeholder=" digite o nome aqui" name="nome" />
           </label>
           <label
-            className={style.infos}
+           className={style.infos}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -190,123 +207,14 @@ export default function register() {
             />
           </label>
           <label className={style.text2}>
-            <h1>Historico de Exames:</h1>
+            <h1>Historico de Exames/Cirurgias:</h1>
           </label>
-          <label
-            className={style.infos}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: "10px",
-              width: "1590px",
-            }}
-          >
-            Exame:
-            <input
-              type="text"
-              placeholder=" digite o tipo de exame feito"
-              name="exame"
-            />
-          </label>
-          <div>
-            <label
-              className={style.infos}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                padding: "10px",
-                width: "1590px",
-              }}
-            >
-              Upload do Exame:
-              <input type="file" accept="application/pdf" />
-            </label>
+          <div className={style.exameInputContainer}>
+            {examInputIds.map((id)=><ExamInput id={id} onClickRemove={removeExamInput} key={id}/>)}
+            <button className={style.addExamBtn} onClick={()=>{ addExamInput()}}>Adicionar Exame/Cirurgia</button>
+            <button className={style.btn} type="submit">Salvar</button>
           </div>
-          <label
-            className={style.infos}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: "10px",
-              width: "1525px",
-            }}
-          >
-            Data do exame:
-            <input
-              type="text"
-              placeholder=" digite a data do exame"
-              name="dataExame"
-            />
-          </label>
-          <label className={style.text2}>
-            <h1>Historico de Cirurgias:</h1>
-          </label>
-          <label
-            className={style.infos}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: "10px",
-              width: "1578px",
-            }}
-          >
-            Cirurgia:
-            <input
-              type="text"
-              placeholder=" digite o tipo de cirurgia feita"
-              name="cirurgia"
-            />
-          </label>
-          <div>
-            <label
-              className={style.infos}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                padding: "10px",
-                width: "1570px",
-              }}
-            >
-              Upload do Relatorio:
-              <input type="file" accept="application/pdf" />
-            </label>
-          </div>
-          <label
-            className={style.infos}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: "10px",
-              width: "1521px",
-            }}
-          >
-            Data da Cirurgia:
-            <input
-              type="text"
-              placeholder=" digite a data da cirurgia"
-              name="dataCirurgia"
-            />
-          </label>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "10px",
-            width: "1525px",
-          }}
-        >
-          <button
-            type="submit"
-            style={{
-              backgroundColor: "#1F2B6C",
-              width: "100px",
-              padding: "10px",
-              marginBottom: '2rem'
-            }}
-          >
-            Salvar
-          </button>
+          
         </div>
       </main>
       <Footer />

@@ -5,31 +5,49 @@ import React, { useEffect, useState } from 'react';
 import axios,{AxiosResponse} from 'axios'
 
 // Suponha que esta é a sua lista de coordenadas.
-const lista: { lat: number; lng: number }[] = [
-  { lat: -23.5505, lng: -46.6333 },
-  { lat: -22.9068, lng: -43.1729 },
-  // Adicione mais coordenadas conforme necessário.
-];
+// const lista: { lat: number; lng: number }[] = [
+//   { lat: -23.5505, lng: -46.6333 },
+//   { lat: -22.9068, lng: -43.1729 },
+//   // Adicione mais coordenadas conforme necessário.
+// ];
 
-// Faz uma requisição para cada conjunto de coordenadas na lista.
-lista.forEach(async (coordenadas) => {
-  try {
-    // Substitua 'http://meuservidor.com/api/minha-rota' pela URL do seu serviço de geolocalização.
-    // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
+// // Faz uma requisição para cada conjunto de coordenadas na lista.
+// lista.forEach(async (coordenadas) => {
+//   try {
+//     const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
+//       auth: {
+//         username: 'user',
+//         password: 'password'
+//         }
+    
+//     });
 
-    const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
-    });
+//     console.log(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
 
-    console.log(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-});
+function getCoords (){
+  axios.get('http://localhost:8081/coords', {
+      auth: {
+        username: 'user',
+        password: 'password'
+        }
+    
+    }).then((response)=>{
+      console.log(response.data);
+    }).catch((error)=>{
+      console.error(error);
+    })
+
+}
 
 const Map = () => {
   const [position, setPosition] = useState<{ lat: number; lng: number }>({ lat: -23.5505, lng: -46.6333 });
 
   useEffect(() => {
+    getCoords();
     const intervalId = setInterval(() => {
       // Atualiza a posição a cada 5 segundos.
       setPosition((prevPosition) => ({

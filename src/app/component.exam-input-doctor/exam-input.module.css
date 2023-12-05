@@ -2,7 +2,12 @@
     display:'flex';
     height: 120vh;
     background-color:#BFD2F8;
+    flex-direction: column;
     height: max-content;
+    text-align: center;
+    border:2px solid black;
+   
+  
     
 }
 
@@ -31,4 +36,11 @@
     font-size:large;
     font-weight:bold;
     
+}
+.button{
+    text-align:center;
+    background-color: red;
+    padding:2px;
+    margin:2px;
+
 }
