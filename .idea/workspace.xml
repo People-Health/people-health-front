@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bcfc782a-455f-4240-9ccb-46cbb9a90f5f" name="Changes" comment="testando commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/map/map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/map/map.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\felti\\Projetos\\people-health-front\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -91,7 +92,12 @@
       <workItem from="1701652484399" duration="484000" />
       <workItem from="1701661205442" duration="197000" />
       <workItem from="1701663807667" duration="65000" />
-      <workItem from="1701702529068" duration="1996000" />
+      <workItem from="1701702529068" duration="3703000" />
+      <workItem from="1701715273363" duration="1024000" />
+      <workItem from="1701718637814" duration="1367000" />
+      <workItem from="1701726044112" duration="10395000" />
+      <workItem from="1701803818519" duration="2596000" />
+      <workItem from="1701861896089" duration="873000" />
     </task>
     <task id="LOCAL-00001" summary="testando commit">
       <option name="closed" value="true" />
