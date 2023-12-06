@@ -22,18 +22,21 @@ export default function Exam() {
                         date='03/05/1999'
                         category='Exame' 
                         file='No file'/>
+
                         <ExamComponent
                         title={'Hemograma'} 
                         local='Hospital da Sé'
                         date='07/09/1989'
                         category='Exame' 
                         file='No file'/>
+
                         <ExamComponent
-                        title={'Retirada vísicula'} 
+                        title={'Retirada de apêndice'} 
                         local='Hospital Santa Maria'
                         date='07/10/1988'
                         category='Cirurgia' 
                         file='No file'/>
+
                           <ExamComponent
                         title={'Eletrocardiograma'} 
                         local='Laboratório Sabin'

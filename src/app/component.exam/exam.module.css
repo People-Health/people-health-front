@@ -1,15 +1,16 @@
 .container{
     /* background-color:#BFD2F8; */
-    /* background-color: #1f2b6c; */
-    background-color: grey;
+    background-color: #1f2b6c;
+    /* background-color: grey; */
     color: black;
+    font-weight:bold;
     padding:20px;
     border-radius: 5%;
     width:50%;
     margin: 0 auto; 
 }
 .title{
-    color: black;
+    color: rgb(243, 239, 239);
     text-shadow: blue;
     text-align: center;
     padding: 5px;
@@ -23,4 +24,10 @@
 
 .button{
     font-weight: bold;
+    padding:2px;
+
+   
+}
+.button:hover{
+    background-color: #72789b;
 }

@@ -101,11 +101,40 @@ fetchDataWithAuth(apiUrl)
 
 
 
+//     const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
+//       auth: {
+//         username: 'user',
+//         password: 'password'
+//         }
+    
+//     });
+
+//     console.log(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+
+// function getCoords (){
+//   axios.get('http://localhost:8081/coords', {
+//       auth: {
+//         username: 'user',
+//         password: 'password'
+//         }
+//
+//     }).then((response)=>{
+//       console.log(response.data);
+//     }).catch((error)=>{
+//       console.error(error);
+//     })
+//
+// }
 
 const Map = () => {
   const [position, setPosition] = useState<{ lat: number; lng: number }>({ lat: -23.5505, lng: -46.6333 });
 
   useEffect(() => {
+    //getCoords();
     const intervalId = setInterval(() => {
       // Atualiza a posição a cada 5 segundos.
       setPosition((prevPosition) => ({
