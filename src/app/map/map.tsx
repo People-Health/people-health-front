@@ -46,12 +46,7 @@ interface AuthToken {
 async function authenticate(): Promise<AuthToken> {   //estava AuthToken
   // Implemente sua lógica de autenticação aqui
   // Exemplo: fazer uma chamada para um endpoint de login
-  const response = await axios.post('https://localhost:8081/coords', {
-    auth: {
-      username: 'user',
-      password: 'password',
-    }
-  });
+  const response = await axios.post('https://localhost:8081/coords');
 
   // Retorne o token de autenticação
   return response.data;
@@ -60,24 +55,25 @@ async function authenticate(): Promise<AuthToken> {   //estava AuthToken
 // Função para realizar uma solicitação autenticada
 async function fetchDataWithAuth(url: string): Promise<AxiosResponse> {
   // Obtenha o token de autenticação
-  const authToken = await authenticate();
 
   // Configure o cabeçalho de autorização com o token
-  const config: AxiosRequestConfig = {
-    headers: {
-      Authorization: `Bearer ${authToken.token}`,
-    },
-  };
 
   // Faça a solicitação usando o Axios com a configuração personalizada
-  const response = await axios.get(url, config);
-
+  const response = await axios.get(url, {
+    proxy: {
+      host: '0.0.0.0',
+      port: 8081, // Replace with your proxy port
+      protocol: 'http', // Change to 'http' for HTTP proxy
+      // Optionally, you can provide authentication credentials if your proxy requires them
+    },
+  });
+  console.log(response);
   // Retorne a resposta
   return response;
 }
 
 // Exemplo de uso
-const apiUrl = 'https://localhost:3001';
+const apiUrl = 'http://localhost:8081/coords';
 fetchDataWithAuth(apiUrl)
     .then((response) => {
       console.log('Dados recebidos:', response.data);
@@ -85,20 +81,6 @@ fetchDataWithAuth(apiUrl)
     .catch((error) => {
       console.error('Erro ao fazer a solicitação:', error.message);
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //     const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
