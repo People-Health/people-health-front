@@ -2,18 +2,87 @@
 'use client'
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { useEffect, useState } from 'react';
-import axios,{AxiosResponse} from 'axios'
+//import axios,{AxiosResponse} from 'axios'
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 // Suponha que esta é a sua lista de coordenadas.
-// const lista: { lat: number; lng: number }[] = [
-//   { lat: -23.5505, lng: -46.6333 },
-//   { lat: -22.9068, lng: -43.1729 },
-//   // Adicione mais coordenadas conforme necessário.
-// ];
+const lista: { lat: number; lng: number }[] = [
+  { lat: -23.5505, lng: -46.6333 },
+  { lat: -22.9068, lng: -43.1729 },
+  // Adicione mais coordenadas conforme necessário.
+];
 
 // // Faz uma requisição para cada conjunto de coordenadas na lista.
 // lista.forEach(async (coordenadas) => {
 //   try {
+//     // Substitua 'http://meuservidor.com/api/minha-rota' pela URL do seu serviço de geolocalização.
+//     // Substitua 'minhasCoordenadas' pelo nome do parâmetro esperado pelo seu serviço de geolocalização.
+//
+//     const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
+//       auth: {
+//         username: 'user',
+//         password: 'password',
+//       }
+//     });
+//
+//     console.log(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+
+
+
+
+
+
+
+// Crie uma interface para representar o formato do token de autenticação
+interface AuthToken {
+  token: string;
+}
+
+// Função para realizar a autenticação e obter um token
+async function authenticate(): Promise<AuthToken> {   //estava AuthToken
+  // Implemente sua lógica de autenticação aqui
+  // Exemplo: fazer uma chamada para um endpoint de login
+  const response = await axios.post('https://localhost:8081/coords');
+
+  // Retorne o token de autenticação
+  return response.data;
+}
+
+// Função para realizar uma solicitação autenticada
+async function fetchDataWithAuth(url: string): Promise<AxiosResponse> {
+  // Obtenha o token de autenticação
+
+  // Configure o cabeçalho de autorização com o token
+
+  // Faça a solicitação usando o Axios com a configuração personalizada
+  const response = await axios.get(url, {
+    proxy: {
+      host: '0.0.0.0',
+      port: 8081, // Replace with your proxy port
+      protocol: 'http', // Change to 'http' for HTTP proxy
+      // Optionally, you can provide authentication credentials if your proxy requires them
+    },
+  });
+  console.log(response);
+  // Retorne a resposta
+  return response;
+}
+
+// Exemplo de uso
+const apiUrl = 'http://localhost:8081/coords';
+fetchDataWithAuth(apiUrl)
+    .then((response) => {
+      console.log('Dados recebidos:', response.data);
+    })
+    .catch((error) => {
+      console.error('Erro ao fazer a solicitação:', error.message);
+    });
+
+
 //     const response: AxiosResponse = await axios.get('http://localhost:8081/coords', {
 //       auth: {
 //         username: 'user',
@@ -28,26 +97,26 @@ import axios,{AxiosResponse} from 'axios'
 //   }
 // });
 
-function getCoords (){
-  axios.get('http://localhost:8081/coords', {
-      auth: {
-        username: 'user',
-        password: 'password'
-        }
-    
-    }).then((response)=>{
-      console.log(response.data);
-    }).catch((error)=>{
-      console.error(error);
-    })
-
-}
+// function getCoords (){
+//   axios.get('http://localhost:8081/coords', {
+//       auth: {
+//         username: 'user',
+//         password: 'password'
+//         }
+//
+//     }).then((response)=>{
+//       console.log(response.data);
+//     }).catch((error)=>{
+//       console.error(error);
+//     })
+//
+// }
 
 const Map = () => {
   const [position, setPosition] = useState<{ lat: number; lng: number }>({ lat: -23.5505, lng: -46.6333 });
 
   useEffect(() => {
-    getCoords();
+    //getCoords();
     const intervalId = setInterval(() => {
       // Atualiza a posição a cada 5 segundos.
       setPosition((prevPosition) => ({

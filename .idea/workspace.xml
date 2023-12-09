@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bcfc782a-455f-4240-9ccb-46cbb9a90f5f" name="Changes" comment="testando commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/map/map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/map/map.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +47,17 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;MapaEmTempoReal&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/felti/Projetos/people-health-front&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/felti/Downloads/people-health/people-health-backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\felti\\Projetos\\people-health-front\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -91,7 +96,18 @@
       <workItem from="1701652484399" duration="484000" />
       <workItem from="1701661205442" duration="197000" />
       <workItem from="1701663807667" duration="65000" />
-      <workItem from="1701702529068" duration="1996000" />
+      <workItem from="1701702529068" duration="3703000" />
+      <workItem from="1701715273363" duration="1024000" />
+      <workItem from="1701718637814" duration="1367000" />
+      <workItem from="1701726044112" duration="10395000" />
+      <workItem from="1701803818519" duration="2596000" />
+      <workItem from="1701861896089" duration="2430000" />
+      <workItem from="1701890186836" duration="36000" />
+      <workItem from="1701969267245" duration="1095000" />
+      <workItem from="1701971606319" duration="1888000" />
+      <workItem from="1702045696343" duration="1654000" />
+      <workItem from="1702064310217" duration="1661000" />
+      <workItem from="1702066849388" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="testando commit">
       <option name="closed" value="true" />
