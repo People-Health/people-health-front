@@ -1,0 +1,21 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #1F2B6C;
+    font-size: 2rem;
+    background-color: #BFD2F8;
+    padding: 3rem 0 3rem 0;
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.duasLousas{
+    display: flex;
+    justify-content: space-around;
+    background-color: #BFD2F8;
+    width: 100%;
+}
+
+.titulozinho{
+    color: black;
+}

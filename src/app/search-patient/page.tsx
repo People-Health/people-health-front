@@ -1,11 +1,16 @@
 import Image from "next/image";
-import style from "../../app/searchPatient/search.module.css";
+import style from "../../app/search-patient/search.module.css";
 import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
 import LogoFaixa from "../component.logoFaixa/logoFaixa";
+import React, { useState, ChangeEvent } from 'react';
+
 
 export default function Search() {
+
+
+  
   return (
     <>
       <main className={style.search}>
@@ -20,11 +25,20 @@ export default function Search() {
             style={{
               display: "flex",
               justifyContent: "center",
-              padding: "30px",
+              padding: "10px",
             }}
           >
-            CPF:
-            <input type="text" placeholder=" cpf *" name="cpf" />
+            {/* CPF: */}
+            <div className={style.inputContainer}>
+              <input
+                type="number"
+                className={style.inputField}
+                placeholder=""
+                name="cpf"
+                maxLength={11}
+              />
+              <label className={style.inputPlaceholder}>CPF *</label>
+              </div>
           </label>
         </div>
         <div
@@ -40,6 +54,7 @@ export default function Search() {
               backgroundColor: "#1F2B6C",
               width: "100px",
               padding: "10px",
+              marginBottom: "3rem"
             }}
           >
             Buscar
