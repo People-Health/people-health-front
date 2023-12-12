@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import style from "../registerPatientData/register.module.css"
+import style from "../register-patient-data/register.module.css"
 import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
@@ -41,11 +41,20 @@ export default function Register() {
               display: "flex",
               justifyContent: "center",
               padding: "10px",
-              width: "1520px",
+              width: "1620px",
             }}
           >
-            Nome completo:
-            <input type="text" placeholder=" digite o nome aqui" name="nome" />
+            {/* Nome completo: */}
+            <div className={style.inputContainer}>
+              <input
+                type="number"
+                className={style.inputField}
+                placeholder=""
+                name="cpf"
+                maxLength={11}
+              />
+              <label className={style.inputPlaceholder}>Nome Completo</label>
+              </div>
           </label>
           <label
            className={style.infos}
@@ -53,27 +62,20 @@ export default function Register() {
               display: "flex",
               justifyContent: "center",
               padding: "10px",
-              width: "1600px",
+              width: "1620px",
             }}
           >
-            Idade:
-            <input
-              type="text"
-              placeholder=" digite a idade aqui"
-              name="idade"
-            />
-          </label>
-          <label
-            className={style.infos}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: "10px",
-              width: "1610px",
-            }}
-          >
-            CPF:
-            <input type="text" placeholder=" digite o cpf aqui" name="cpf" />
+            {/* Idade: */}
+            <div className={style.inputContainer}>
+              <input
+                type="number"
+                className={style.inputField}
+                placeholder=""
+                name="cpf"
+                maxLength={11}
+              />
+              <label className={style.inputPlaceholder}>Data Nascimento</label>
+              </div>
           </label>
           <label
             className={style.infos}
@@ -84,9 +86,40 @@ export default function Register() {
               width: "1620px",
             }}
           >
-            RG:
-            <input type="text" placeholder=" digite o rg aqui" name="rg " />
+            {/* CPF: */}
+            <div className={style.inputContainer}>
+              <input
+                type="number"
+                className={style.inputField}
+                placeholder=""
+                name="cpf"
+                maxLength={11}
+              />
+              <label className={style.inputPlaceholder}>CPF *</label>
+              </div>
           </label>
+          <label
+            className={style.infos}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "10px",
+              width: "1620px",
+            }}
+          >
+            {/* RG: */}
+            <div className={style.inputContainer}>
+              <input
+                type="number"
+                className={style.inputField}
+                placeholder=""
+                name="cpf"
+                maxLength={11}
+              />
+              <label className={style.inputPlaceholder}>RG *</label>
+              </div>
+          </label>
+        
           <label className={style.text2}>
             <h1>Informações Clinicas:</h1>
           </label>

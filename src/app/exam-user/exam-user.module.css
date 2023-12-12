@@ -11,9 +11,10 @@
     justify-content: center;
     color: #1F2B6C;
     font-size: 2rem;
-    font-weight: 550;
+    font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 20px;;
+    margin-bottom: 30px;;
+    margin-top: 30px;
 }
 
 .examnull{
@@ -31,7 +32,7 @@
     color: black;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
-    
+    gap:50px;
+
     align-items: center;
 }
