@@ -4,7 +4,7 @@ import style from "../../app/result-patient-search/result.module.css"
 import Footer from '../component.footer/footer';
 import Header from "../component.header/header";
 import LogoFaixa from '../component.logoFaixa/logoFaixa';
-import fotoperfil from "public/fotoperfil.png";
+import fotoperfil from "../../../public/fotoperfil.png";
 import ExamComponent from '../component.exam/exam';
 
 

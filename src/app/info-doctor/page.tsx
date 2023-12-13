@@ -4,7 +4,8 @@ import style from "../../app/info-user/info-user.module.css"
 import Footer from '../component.footer/footer';
 import Header from "../component.header/header";
 import LogoFaixa from '../component.logoFaixa/logoFaixa';
-import fotoperfil from "public/fotoperfil.png";
+import fotoperfil from "../../../public/fotoperfil.png";
+
 
 export default function Info() {
     return (
