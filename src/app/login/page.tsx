@@ -10,6 +10,13 @@ import Link from 'next/link';
 
 
 const  Login=()=>{
+    const [num,setBool]=useState(1);
+
+    function btn(){
+        setBool(num+1);
+        console.log(num);
+
+    }
     return(
         <div className={style.container} style={{display:'flex'}}> {/*preciso dizer que o display é flex no css inline tbm */}
         <LogoFaixa/>
@@ -17,6 +24,7 @@ const  Login=()=>{
             <main style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <LoginForm/>
             </main>
+            <button onClick={()=>btn()}>valor:{num}</button>
             <Footer/>
             
         </div>
