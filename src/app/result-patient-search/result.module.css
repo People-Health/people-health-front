@@ -1,0 +1,153 @@
+.pular{
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+/* =============================================== */
+.fundo1{
+    background-color: #fff;
+    padding: 2rem 7rem 2rem 7rem;
+ }
+ 
+ .lousapequena1{
+     display: flex;
+     background-color: #1c2c6c;
+     width: 100%;
+     font-size: 2rem;
+     justify-content: center;
+     font-family: Work Sans;
+     color: #bfd2f8;
+     padding: 1rem 0 0 0;
+ }
+ 
+ .lousagrande1{
+     display: flex;
+     background-color: #1c2c6c;
+     width: 100%;
+     height: 22rem;
+     align-items: center;
+ }
+ 
+ .imgperfil{
+     width: 15rem;
+     height: 15rem;
+     margin-left: 6rem;
+ }
+ 
+ .lousadados > h1{
+     display: block;
+     color: #fff;
+     margin-left: 8rem;
+     margin-bottom: 2rem;
+     font-weight:500;
+     font-size: 1.3rem;
+ } 
+ 
+ .dadosrecebidos > h1{
+     display: block;
+     color: #fff;
+     margin-left: 10rem;
+     font-weight: 200;
+     margin-bottom: 2rem;
+     font-size: 1.3rem;
+ }
+/* =============================================== */
+
+.fundo2{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    height: auto;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #1F2B6C;
+    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;;
+    margin-top: 30px;
+}
+
+.examnull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.exam{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+
+    align-items: center;
+}
+
+/* =============================================== */
+
+.fundo3{
+    background-color: #fff;
+    padding: 2rem 15rem 2rem 15rem;
+}
+
+.lousapequena3{
+    display: flex;
+    background-color: #1c2c6c;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    font-family: Work Sans;
+    color: #bfd2f8;
+    padding-top: 1rem;
+}
+
+.lousaFixo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    background-color: #1c2c6c;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+ }
+
+ .lousaDados{
+    display: flex;
+    background-color: #1c2c6c;
+    width: 100%;
+    height: auto;
+ }
+
+.button:hover{
+    background-color:#bfd2f8;
+    color: #1c2c6c;
+    border-radius: 1.5rem;
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 9rem;
+    padding-bottom: 2rem;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c2c6c;
+}

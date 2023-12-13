@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ option }) => {
             <Link href="/search-patient">Consultar Paciente</Link>
           </button>
           <button className={style.button}>
-          <Link href="/register-patient-data">Cadastrar Paciente</Link>
+          <Link href="/register-patient-data-1">Cadastrar Paciente</Link>
           </button>
           <button className={style.button}><Link href="/map">Mapa</Link></button>
         </div>

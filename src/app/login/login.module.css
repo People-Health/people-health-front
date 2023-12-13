@@ -62,3 +62,39 @@
     font-weight: bold;
 
 }
+
+
+
+    /* INput */
+
+    .inputContainer {
+        position: relative;
+        margin-bottom: 1.5rem;   
+    }
+    
+    .inputPlaceholder {
+        position: absolute;
+        top: 50%;
+        left: 10px; /* ou qualquer valor que você preferir para o espaçamento à esquerda */
+        transform: translateY(-50%);
+        transition: top 0.3s, font-size 0.3s; /* Adiciona transição para suavizar a mudança de posição e tamanho */
+        pointer-events: none; /* Permite que cliques passem através do elemento */
+        color: #606060;
+        
+    }
+    
+    .inputField {
+        padding: 10px; /* Ajuste conforme necessário para o espaçamento interno do campo de entrada */
+        z-index: 1; /* Garante que o campo de entrada está acima do texto do placeholder */
+        outline: none;
+        border-radius: 1rem;
+        width: 20rem;
+        
+
+    }
+    
+    .inputField:focus + .inputPlaceholder,
+    .inputField:not(:placeholder-shown) + .inputPlaceholder {
+        top: 0;
+        font-size: 12px; /* ou qualquer tamanho que você preferir para o texto acima do placeholder */
+    }

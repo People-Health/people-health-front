@@ -11,7 +11,7 @@ export default function Exam() {
         
         <div>
             <LogoFaixa/>
-            <Header option={1}/>
+            <Header option={2}/>
             <div className={style.fundo}>
                 <div className={style.titulo}>Exames:</div>
 

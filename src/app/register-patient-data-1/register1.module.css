@@ -14,8 +14,114 @@
     justify-content: space-around;
     background-color: #BFD2F8;
     width: 100%;
+    }
+
+    .titulozinho{
+        display: flex;
+        color: black;
+        justify-content: center;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
+
+.margin{
+    margin-right: 1rem;
 }
 
-.titulozinho{
-    color: black;
+.container{
+    display: flex;
+    background-color:#BFD2F8;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;    
 }
+
+.infos{
+    color: black;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+.text1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #1F2B6C;
+    text-shadow: blue;
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight:bold;
+    
+}
+
+.text2{
+    color: black;
+    text-shadow: blue;
+    text-align: center;
+    font-size:large;
+    font-weight:bold;
+    
+}
+.exameInputContainer{
+    text-align: center;
+    background-color: #BFD2F8;
+}
+.btn{
+    background-color:#1F2B6C;
+    width:100px;
+    padding: 10px;
+    margin-bottom: 2rem
+
+}
+.addExamBtn{
+    font-weight:bold;
+    color:#1F2B6C;
+    margin-right:2rem;
+    background-color: #BFD2F8;
+}
+
+
+
+
+    /* INput */
+
+    .inputContainer {
+        position: relative;
+        margin-bottom: 1.5rem;   
+    }
+    
+    .inputPlaceholder {
+        position: absolute;
+        top: 50%;
+        left: 10px; /* ou qualquer valor que você preferir para o espaçamento à esquerda */
+        transform: translateY(-50%);
+        transition: top 0.3s, font-size 0.3s; /* Adiciona transição para suavizar a mudança de posição e tamanho */
+        pointer-events: none; /* Permite que cliques passem através do elemento */
+        color: #606060;
+        
+    }
+    
+    .inputField {
+        padding: 10px; /* Ajuste conforme necessário para o espaçamento interno do campo de entrada */
+        z-index: 1; /* Garante que o campo de entrada está acima do texto do placeholder */
+        outline: none;
+        border-radius: 1rem;
+        width: 20rem;
+        
+
+    }
+    
+    .inputField:focus + .inputPlaceholder,
+    .inputField:not(:placeholder-shown) + .inputPlaceholder {
+        top: 0;
+        font-size: 12px; /* ou qualquer tamanho que você preferir para o texto acima do placeholder */
+    }

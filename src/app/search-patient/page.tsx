@@ -1,16 +1,20 @@
-import Image from "next/image";
+"use client";
 import style from "../../app/search-patient/search.module.css";
-import Link from "next/link";
 import Footer from "../component.footer/footer";
 import Header from "../component.header/header";
 import LogoFaixa from "../component.logoFaixa/logoFaixa";
-import React, { useState, ChangeEvent } from 'react';
-
+import React, { useState } from "react";
+import { formattedCpf } from "../../utils/cpfFormated";
+import Link from "next/link";
 
 export default function Search() {
+  const [value, setValue] = useState("");
 
+  const handleChange = (event: any) => {
+    const formattedValue = formattedCpf(event.target.value);
+    setValue(formattedValue);
+  };
 
-  
   return (
     <>
       <main className={style.search}>
@@ -31,14 +35,16 @@ export default function Search() {
             {/* CPF: */}
             <div className={style.inputContainer}>
               <input
-                type="number"
+                type="text"
                 className={style.inputField}
                 placeholder=""
                 name="cpf"
-                maxLength={11}
+                maxLength={14}
+                onChange={handleChange}
+                value={value}
               />
               <label className={style.inputPlaceholder}>CPF *</label>
-              </div>
+            </div>
           </label>
         </div>
         <div
@@ -54,14 +60,15 @@ export default function Search() {
               backgroundColor: "#1F2B6C",
               width: "100px",
               padding: "10px",
-              marginBottom: "3rem"
+              marginBottom: "3rem",
             }}
           >
-            Buscar
+          <Link href="/result-patient-search">Buscar</Link>
+
           </button>
         </div>
       </main>
       <Footer />
-    </>
-  );
+    </>
+  );
 }

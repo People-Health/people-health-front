@@ -34,12 +34,28 @@ const  LoginForm=()=>{
                 </h1>
             </label>
             <label className={style.usuario} style={{display:'flex', justifyContent:'space-between'}}>
-                Usuário: 
-                <input type='text'placeholder=' usuário *' name="username" style={{marginBottom:'10px', color: 'black', fontWeight:'normal'}}/>
+                {/* Usuário:  */}
+                <div className={style.inputContainer}>
+                        <input
+                            type="text"
+                            className={style.inputField}
+                            placeholder=""
+                            name="cpf"
+                        />
+                        <label className={style.inputPlaceholder}>Usuário</label>
+                    </div>  
             </label>
             <label className={style.senha} style={{display:'flex', justifyContent:'space-between'}}>
-                Senha:
-                <input type="password" placeholder=' senha *'  name="password" style={{marginBottom:'10px', color: 'black', fontWeight:'normal'}}/>
+                {/* Senha: */}
+                                <div className={style.inputContainer}>
+                        <input
+                            type="password"
+                            className={style.inputField}
+                            placeholder=""
+                            name="cpf"
+                        />
+                        <label className={style.inputPlaceholder}>Senha</label>
+                    </div>
             </label>
             <div style={{display:'flex', justifyContent:'center',paddingTop:'2rem'}}>
                 <button type="submit" style={{backgroundColor:'#1F2B6C',width:'8rem', padding:'0.5rem'}}>
